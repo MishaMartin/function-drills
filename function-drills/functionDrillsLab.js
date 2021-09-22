@@ -4,7 +4,11 @@
   Call the function.
 */
 
-//CODE HERE
+// function greeting(hello) {
+//   console.log(hello)
+// }
+
+// greeting("Hello, World!")
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -14,8 +18,11 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+// function printName(name) {
+//   console.log(name)
+// }
 
+// printName('Cameron')
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -28,8 +35,11 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+// function greeting(name) {
+//   console.log(`Hello, ` + `${name}`)
+// }
 
+// greeting('Jake')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -39,8 +49,14 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+// function add(num1, num2) {
+//   num1 = +num1
+//   num2 = +num2
+//   return num1 + num2
+// }
+// let sum = add(6,3)
 
+// console.log(sum)
 
 ////////////////// PROBLEM 5 ////////////////////
 /*
@@ -51,7 +67,17 @@
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+// function nameCheck(nameParam) {
+//   if(nameParam.includes('Steven') === true) {
+//     console.log("What's up Steven?")
+//   }else if(nameParam.includes('Brian') === true) {
+//     console.log("Hey Brian!")
+//     } else {
+//       console.log(`Cool name, ${nameParam}`)
+//     }
+//   }
+
+// let nameGreeting = nameCheck('Brian')
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -64,8 +90,19 @@
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+// function faveColorFinder(color) {
+//   if(color === "red") {
+//     console.log("red is a great color")
+//   } else if(color === "green") {
+//     console.log('green is a solid favorite')
+//   } else if(color === "black") {
+//     console.log("so trendy")
+//   } else {
+//     console.log("you need to evaluate your favorite color choice")
+//   }
+// }
 
+// let colorRating = faveColorFinder('green')
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -75,7 +112,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+// function printAllNames(name) {
+//   for(let i = 0; i < name.length; i++) {
+// console.log(name[i])
+//   }
+// }
+
+// console.log(printAllNames(namesArr))
+
+
 
 
 ////////////////// PROBLEM 8 ////////////////////
@@ -86,7 +131,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(number) {
+  if(number % 2 === 0) {
+    console.log("That\'s not odd!")
+  } else {
+    console.log("That is odd indeed!")
+  }
+}
+let oddChecker = thatsOdd(7)
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -100,8 +152,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr) {
+  let answers = [] 
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i] > 100) {
+        answers.push("big")
+        
+       } else if(arr[i] <= 100) {
+         answers.push("small")
+       }
+    }
+    let arrayEvaluator = console.log(answers)
+  }
 
+bigOrSmall(bigOrSmallArray)
 
 ////////////////// PROBLEM 10 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
